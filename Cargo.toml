@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "date_diff",
+    "date_diff_lib",
+]
