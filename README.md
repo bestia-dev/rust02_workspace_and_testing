@@ -51,7 +51,7 @@ Open the Debian bash.
 `cd target`  
 `cd debug`  
 and now run the executable binary  
-`./date_diff`  
+`./date_diff 20190909 20190808`  
 The result must be the same as in windows.  
   
 ## Referenced
