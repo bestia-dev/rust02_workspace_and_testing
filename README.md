@@ -16,8 +16,8 @@ I pushed the code of this project to GitHub using Git. I believe you are now rea
 Cloning a GitHub repository to a local folder is super simple.  
 In GitHub click on the `Clone or download` big green button. You can there copy the URL to your clipboard.  
 Open a Command prompt. Go to the `/rustprojects` folder and type  
-`clone `  and then paste the clipboard content with `Ctrl + v`  
-Yes, the command prompt lately after years and years of right clicks now supports the ubiquitous `Ctrl + v`. In Linux bash you have still to use right click for this.  
+`clone ` and space and then paste the clipboard content with `Ctrl + v`  
+Yes, the command prompt after years and years of right clicks now supports the ubiquitous `Ctrl + v`. In Linux bash you have still to use right click for this.  
 Press `Enter` to run it.  
 It will clone the GitHub repository in a new subfolder.  
 ## Build and run
@@ -25,28 +25,29 @@ Go into this subfolder:
 `cd rust02_workspace_and_testing`  
 Execute the command to build and run with parameters  
 `cargo run -- 20190909 20190808`  
-You can also do it in two separate steps..
+You can also do it in two separate steps  
 `cargo build`  
-then 
+then  
 `cd target`  
 `cd debug`  
 `date_diff.exe 20190909 20190808`  
 ## Source code
 To understand the result let's have a look at the source code in VSCode.  
-`File - Open folder - c:\Users\Luciano\RustProjects\rust02_workspace_and_testing\`
-You will have your username here.  
-You will see that VSCode has `Open Workspace`, but I think it is another type of Workspace, not the Rust Workspace.  
-Let's open `/date_diff/src/main.rs`  
+`File - Open folder - c:\Users\Luciano\RustProjects\rust02_workspace_and_testing\`  
+You will use your username here.  
+You will see that VSCode has a command `Open Workspace`, but I think it is for another type of Workspace, not the Rust Workspace.  
+Let's open the file `/date_diff/src/main.rs`  
 I verbosely commented the code so it is most instructional.  
 Now open the `/date_diff_lib/lib.rs`  
 It has a `test` region and only one true public function.  
 All is heavy commented.  
   
 ## Linux
-We want the same code to be compiled to Linux.  
-Open the Debian bash. 
+We want the same code to be compiled for Linux.  
+Open the `Debian bash` of WSL. You know that from the first tutorial.  
 `cd r` then press Tab key and it will suggest `rustprojects` probably.  
 `cd rust02` then press Tab key and it will suggest `rust02_workspace_and_testing/` probably.  
+It is practical to learn this Tab key suggestions instead of typing long file/folder names.  
 `cargo build`  
 `cd target`  
 `cd debug`  
@@ -54,7 +55,28 @@ and now run the executable binary
 `./date_diff 20190909 20190808`  
 The result must be the same as in windows.  
   
-## Referenced
+## Cargo.toml
+The file `Cargo.toml` is the configuration file for the Cargo builder tool.  
+It is inside every Rust project or workspace.  
+If we look inside the first `/Cargo.toml` we will see that the workspace has 2 members.  
+The `date_diff` project has its own `Cargo.toml`. It contains package metadata and dependencies.  
+The `date_diff_lib` project `Cargo.toml` file contains only package metadata.  
+The `Better TOML` extension for VSCode is useful for this syntax in general.  
+The VSCode extension `crates` is useful for working with dependencies in `Cargo.toml`.  
+Dependencies are by default downloaded from the standard Rust crate repository `crates.io`.  
+For local dependencies use the syntax like this `{ path = "../date_diff_lib" }`.  
+  
+## Testing
+In the workspace folder run  
+`cargo test`  
+It will execute all tests that are included in the source code.  
+Find them in `lib.rs` in the module `mod tests`.  
+Test are nothing else then normal functions. They are just decorated with  
+`#[test]`  
+to let the Cargo tool understand they are tests.  
+You can also write tests inside function doc comments. This special comments have three slashes and are located before the function declaration.  
+  
+## References
 https://doc.rust-lang.org/stable/book/  
 
 
