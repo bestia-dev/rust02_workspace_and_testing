@@ -74,7 +74,8 @@ Find them in `lib.rs` in the module `mod tests`.
 Test are nothing else then normal functions. They are just decorated with  
 `#[test]`  
 to let the Cargo tool understand they are tests.  
-You can also write tests inside function doc comments. This special comments have three slashes and are located before the function declaration.  
+You can also write tests inside function doc comments. This special comments have three slashes and are located before the function declaration. They are used to generate the documentation. If the test passes it can mean, the documentation is up to date.  
+https://learning-rust.github.io/docs/a5.comments_and_documenting_the_code.html  
   
 ## References
 https://doc.rust-lang.org/stable/book/  
