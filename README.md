@@ -21,17 +21,23 @@ Open a Command prompt. Go to the `/rustprojects` folder and type
 Yes, the command prompt after years and years of right clicks now supports the ubiquitous `Ctrl + v`. In Linux bash you have still to use right click for this.  
 Press `Enter` to run it.  
 It will clone the GitHub repository in a new subfolder.  
+BTW if you like you can install the Chrome extension "GitHub Dark Theme".  
 ## Build and run
 Go into this subfolder:  
-`cd rust02_workspace_and_testing`  
+```
+cd rust02_workspace_and_testing
+```  
 Execute the command to build and run with parameters  
-`cargo run -- 20190909 20190808`  
+```
+cargo run -- 20190909 20190808
+```  
 You can also do it in two separate steps  
-`cargo build`  
-then  
-`cd target`  
-`cd debug`  
-`date_diff.exe 20190909 20190808`  
+```
+cargo build
+cd target
+cd debug
+date_diff.exe 20190909 20190808
+```  
 ## Source code
 To understand the result let's have a look at the source code in VSCode.  
 `File - Open folder - c:\Users\Luciano\RustProjects\rust02_workspace_and_testing\`  
