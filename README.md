@@ -1,7 +1,7 @@
 Things are changing fast. This is the situation on 2019-05-03.  
+Read the `Last project` first: https://github.com/LucianoBestia/rust01_the_beginning  
 # rust02_workspace_and_testing
 Learning Rust: how to use workspace, binary, library and testing.  
-Read the first part first: https://github.com/LucianoBestia/rust01_the_beginning  
 ## Workspace
 For Rust Workspace is a group of projects developed together.  
 It is easy to make a binary (main.rs, executable) project. But it is not good for testing.  
@@ -82,6 +82,8 @@ Test are nothing else then normal functions. They are just decorated with
 to let the Cargo tool understand they are tests.  
 You can also write tests inside function doc comments. This special comments have three slashes and are located before the function declaration. They are used to generate the documentation. If the test passes it can mean, the documentation is up to date.  
 https://learning-rust.github.io/docs/a5.comments_and_documenting_the_code.html  
+## Next projects
+https://github.com/LucianoBestia/mem1  
   
 ## References
 https://doc.rust-lang.org/stable/book/  
