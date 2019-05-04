@@ -13,7 +13,7 @@ I want to make a simple CLI (console line interface) application that calculates
 I need it to know how many days I am already on vacation.  
 I try to use all small caps and underscores for all the file/folder names because of the case sensitivity of Linux file system.  
 ## GitHub and Git
-I pushed the code of this project to GitHub using Git. I believe you are now reading it from GitHub. I suppose you have Git already installed if you learned from my last project `https://github.com/LucianoBestia/rust01_the_beginning`.  
+I pushed the code of this project to GitHub using Git. I believe you are now reading it from GitHub. I suppose you have Git already installed if you learned from my last project https://github.com/LucianoBestia/rust01_the_beginning.  
 Cloning a GitHub repository to a local folder is super simple.  
 In GitHub click on the `Clone or download` big green button. You can there copy the URL to your clipboard.  
 Open a Command prompt. Go to the `/rustprojects` folder and type  
