@@ -34,9 +34,7 @@ cargo run -- 20190909 20190808
 You can also do it in two separate steps  
 ```
 cargo build
-cd target
-cd debug
-date_diff.exe 20190909 20190808
+target\debug\date_diff.exe 20190909 20190808
 ```  
 ## Source code
 To understand the result let's have a look at the source code in VSCode.  
@@ -55,11 +53,10 @@ Open the `Debian bash` of WSL. You know that from the first tutorial.
 `cd r` then press Tab key and it will suggest `rustprojects` probably.  
 `cd rust02` then press Tab key and it will suggest `rust02_workspace_and_testing/` probably.  
 It is practical to learn this Tab key suggestions instead of typing long file/folder names.  
-`cargo build`  
-`cd target`  
-`cd debug`  
-and now run the executable binary  
-`./date_diff 20190909 20190808`  
+```
+cargo build  
+target/debug/date_diff 20190909 20190808
+```  
 The result must be the same as in windows.  
   
 ## Cargo.toml
@@ -75,7 +72,9 @@ For local dependencies use the syntax like this `{ path = "../date_diff_lib" }`.
   
 ## Testing
 In the workspace folder run  
-`cargo test`  
+```
+cargo test
+```  
 It will execute all tests that are included in the source code.  
 Find them in `lib.rs` in the module `mod tests`.  
 Test are nothing else then normal functions. They are just decorated with  
