@@ -69,7 +69,6 @@ The `Better TOML` extension for VSCode is useful for this syntax in general.
 The VSCode extension `crates` is useful for working with dependencies in `Cargo.toml`.  
 Dependencies are by default downloaded from the standard Rust crate repository `crates.io`.  
 For local dependencies use the syntax like this `{ path = "../date_diff_lib" }`.  
-  
 ## Testing
 In the workspace folder run  
 ```
@@ -82,6 +81,8 @@ Test are nothing else then normal functions. They are just decorated with
 to let the Cargo tool understand they are tests.  
 You can also write tests inside function doc comments. This special comments have three slashes and are located before the function declaration. They are used to generate the documentation. If the test passes it can mean, the documentation is up to date.  
 https://learning-rust.github.io/docs/a5.comments_and_documenting_the_code.html  
+## VSCode
+There is a lot of typing in English so I would like to have a spellchecker. I found the VSCode extension Spell Right. When editing a text in the right corner down of the status bar there is an eye. Click on it to choose the language.  
 ## Next projects
 https://github.com/LucianoBestia/mem1  
   
