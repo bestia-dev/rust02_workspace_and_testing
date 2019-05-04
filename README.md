@@ -9,7 +9,8 @@ It is easy to make a library (lib.rs) but you can not run it.
 With a workplace I can split my application into one binary source code and one library source code. So I have the best of both worlds.  
 The result is still just one executable file. That is a great thing with Rust.  
 ## date_diff
-I want to make a simple CLI (console line interface) application that calculates date difference. I need it to know how many days I am on vacation.  
+I want to make a simple CLI (console line interface) application that calculates date difference.  
+I need it to know how many days I am already on vacation.  
 I try to use all small caps and underscores for all the file/folder names because of the case sensitivity of Linux file system.  
 ## GitHub and Git
 I pushed the code of this project to GitHub using Git. I believe you are now reading it from GitHub. I suppose you have Git already installed if you learned from my last project `rust01_the_beginning`.  
