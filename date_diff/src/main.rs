@@ -8,7 +8,7 @@ use date_diff_lib;
 ///The starting point of the application
 fn main() {
     //this function is different for Windows and for Linux.
-    //Look at the code of this function.
+    //Look at the code of this function (2 variations).
     enable_ansi_support();
 
     //define the CLI input line parameters using the clap library
