@@ -1,1 +1,1 @@
-*.rs linguist-language=Rust
+*.toml linguist-language=Rust
