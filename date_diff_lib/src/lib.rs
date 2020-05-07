@@ -3,6 +3,37 @@
 //! A library for calculating day diff in days.
 //! Just for learning Rust programming.
 
+/// Calculates date diff in days
+/// Below is a test embedded inside function doc comments
+/// # Examples
+///
+/// ```
+/// assert_eq!(date_diff_lib::daydiff(2019, 5, 5, 2019, 3, 5), -61);
+///
+/// ```
+pub fn daydiff(
+    year_one: i32,
+    month_one: i32,
+    days_one: i32,
+    year_two: i32,
+    month_two: i32,
+    days_two: i32,
+) -> i32 {
+    //this is a crazy formula, but efficient way of calculating day diff.
+    //Be aware, that the calendar has changed many times in history.
+    //The last change for "our" calendar was around 1753. 
+    //So calculating anything before that is mathematically incorrect.
+    //https://www.timeanddate.com/calendar/julian-gregorian-switch.html
+    (days_two - 32075
+        + 1461 * (year_two + 4800 + (month_two - 14) / 12) / 4
+        + 367 * (month_two - 2 - (month_two - 14) / 12 * 12) / 12
+        - 3 * (((year_two + 4900 + (month_two - 14) / 12) / 100) / 4)
+        - (days_one - 32075
+            + 1461 * (year_one + 4800 + (month_one - 14) / 12) / 4
+            + 367 * (month_one - 2 - (month_one - 14) / 12 * 12) / 12
+            - 3 * ((year_one + 4900 + (month_one - 14) / 12) / 100) / 4))
+}
+
 //region: tests
 #[cfg(test)]
 mod tests {
@@ -57,34 +88,3 @@ mod tests {
     }
 }
 //endregion
-
-/// Calculates date diff in days
-/// Below is a test embedded inside function doc comments
-/// # Examples
-///
-/// ```
-/// assert_eq!(date_diff_lib::daydiff(2019, 5, 5, 2019, 3, 5), -61);
-///
-/// ```
-pub fn daydiff(
-    year_one: i32,
-    month_one: i32,
-    days_one: i32,
-    year_two: i32,
-    month_two: i32,
-    days_two: i32,
-) -> i32 {
-    //this is a crazy formula, but efficient way of calculating day diff.
-    //Be aware, that the calendar has changed many times in history.
-    //The last change for "our" calendar was around 1753. 
-    //So calculating anything before that is mathematically incorrect.
-    //https://www.timeanddate.com/calendar/julian-gregorian-switch.html
-    (days_two - 32075
-        + 1461 * (year_two + 4800 + (month_two - 14) / 12) / 4
-        + 367 * (month_two - 2 - (month_two - 14) / 12 * 12) / 12
-        - 3 * (((year_two + 4900 + (month_two - 14) / 12) / 100) / 4)
-        - (days_one - 32075
-            + 1461 * (year_one + 4800 + (month_one - 14) / 12) / 4
-            + 367 * (month_one - 2 - (month_one - 14) / 12 * 12) / 12
-            - 3 * ((year_one + 4900 + (month_one - 14) / 12) / 100) / 4))
-}
