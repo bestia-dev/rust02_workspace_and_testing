@@ -1,7 +1,8 @@
-Things are changing fast. This is the situation on 2019-05-03.  
-Read the `Last project` first: https://github.com/LucianoBestia/rust01_the_beginning  
 # rust02_workspace_and_testing
-Learning Rust: how to use workspace, binary, library and testing.  
+**Learning Rust: how to use workspace, binary, library and testing**  
+***version: 1.0  date: 2019-05-03 author: [Dev_Bestia](https://bestia.dev) repositroy: [GitHub](https://github.com/LucianoBestia/rust02_workspace_and_testing)***  
+Read the `Last project` first: https://github.com/LucianoBestia/rust01_the_beginning  
+
 ## Workspace
 For Rust Workspace is a group of projects developed together.  
 It is easy to make a binary (main.rs, executable) project. But it is not good for testing.  
@@ -88,7 +89,3 @@ https://github.com/LucianoBestia/mem1
   
 ## References
 https://doc.rust-lang.org/stable/book/  
-
-
-
-
