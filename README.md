@@ -1,6 +1,7 @@
 # rust02_workspace_and_testing
 **Learning Rust: how to use workspace, binary, library and testing**  
 ***version: 1.0  date: 2019-05-03 author: [Dev_Bestia](https://bestia.dev) repositroy: [GitHub](https://github.com/LucianoBestia/rust02_workspace_and_testing)***  
+
 Read the `Last project` first: https://github.com/LucianoBestia/rust01_the_beginning  
 
 ## Workspace
