@@ -1,8 +1,8 @@
 # rust02_workspace_and_testing
 **Learning Rust: how to use workspace, binary, library and testing**  
-***version: 1.0  date: 2019-05-03 author: [Dev_Bestia](https://bestia.dev) repository: [GitHub](https://github.com/LucianoBestia/rust02_workspace_and_testing)***  
+***version: 1.0  date: 2019-05-03 author: [bestia.dev](https://bestia.dev) repository: [GitHub](https://github.com/bestia-dev/rust02_workspace_and_testing)***  
 
-Read the `Last project` first: https://github.com/LucianoBestia/rust01_the_beginning  
+Read the `Last project` first: https://github.com/bestia-dev/rust01_the_beginning  
 
 ## Workspace
 For Rust Workspace is a group of projects developed together.  
@@ -15,7 +15,7 @@ I want to make a simple CLI (console line interface) application that calculates
 I need it to know how many days I am already on vacation.  
 I try to use all small caps and underscores for all the file/folder names because of the case sensitivity of Linux file system.  
 ## GitHub and Git
-I pushed the code of this project to GitHub using Git. I believe you are now reading it from GitHub. I suppose you have Git already installed if you learned from my last project https://github.com/LucianoBestia/rust01_the_beginning.  
+I pushed the code of this project to GitHub using Git. I believe you are now reading it from GitHub. I suppose you have Git already installed if you learned from my last project https://github.com/bestia-dev/rust01_the_beginning.  
 Cloning a GitHub repository to a local folder is super simple.  
 In GitHub click on the `Clone or download` big green button. You can there copy the URL to your clipboard.  
 Open a Command prompt. Go to the `/rustprojects` folder and type  
@@ -86,7 +86,7 @@ https://learning-rust.github.io/docs/a5.comments_and_documenting_the_code.html
 ## VSCode
 There is a lot of typing in English so I would like to have a spellchecker. I found the VSCode extension `Spell Right`. When editing a text in the right corner down of the status bar there is an `open eye`. Click on it to choose the language.  
 ## Next projects
-https://github.com/LucianoBestia/mem1  
+https://github.com/bestia-dev/mem1  
   
 ## References
 https://doc.rust-lang.org/stable/book/  
