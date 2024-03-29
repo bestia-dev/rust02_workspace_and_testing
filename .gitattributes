@@ -5,10 +5,15 @@
 *.toml text eol=lf
 *.md text eol=lf
 *.json text eol=lf
+*.json5 text eol=lf
 *.lock text eol=lf
 *.yml text eol=lf
 *.html text eol=lf
 *.js text eol=lf
 *.css text eol=lf
+LICENSE text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
 
-*.toml linguist-language=Rust
+# Github’s Linguist tool: force Rust if Cargo.toml exists
+Cargo.toml linguist-language=Rust
