@@ -5,13 +5,20 @@
 **Learning Rust - how to use workspace, binary, library and testing**  
 ***version: 1.0  date: 2019-05-03 author: [bestia.dev](https://bestia.dev) repository: [GitHub](https://github.com/bestia-dev/rust02_workspace_and_testing)***  
 
+ ![obsolete](https://img.shields.io/badge/obsolete-red)
  ![tutorial](https://img.shields.io/badge/tutorial-yellow)
  ![rust02_workspace_and_testing](https://bestia.dev/webpage_hit_counter/get_svg_image/543481533.svg)
 
 Hashtags: #rustlang #tutorial  
 My projects on Github are more like a tutorial than a finished product: [bestia-dev tutorials](https://github.com/bestia-dev/tutorials_rust_wasm).
 
-Read the `Last project` first: <https://github.com/bestia-dev/rust01_the_beginning>  
+## OBSOLETE
+
+This project is now 4 years old and it is obsolete.
+Please follow this link to the updated version:
+<https://github.com/CRUSTDE-ContainerizedRustDevEnv/CRUSTDE_Containerized_Rust_DevEnv>
+
+There is still some interesting information in this project, so I will not archive it. But I don't recommend to use it for working projects.
 
 ## Workspace
 
