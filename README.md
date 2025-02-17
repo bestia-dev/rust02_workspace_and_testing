@@ -8,6 +8,7 @@
 
  ![obsolete](https://img.shields.io/badge/obsolete-red)
  ![tutorial](https://img.shields.io/badge/tutorial-yellow)
+ ![License](https://img.shields.io/badge/license-MIT-blue.svg)
  ![rust02_workspace_and_testing](https://bestia.dev/webpage_hit_counter/get_svg_image/543481533.svg)
 
 Hashtags: #rustlang #tutorial  
